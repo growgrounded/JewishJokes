@@ -1,0 +1,191 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Full height */
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    flex: 1;
+    /* Allows main to grow and fill available space */
+}
+
+a {
+    color: #008cba;
+    /* Fun, vibrant color */
+    text-decoration: none;
+    /* Removes underline */
+    padding: 5px 10px;
+    /* Adds some space around the text */
+    display: inline-block;
+    /* Allows padding and other box model properties */
+    border-radius: 4px;
+    /* Optional: Adds rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+a:hover {
+    background-color: #008cba;
+    /* Adds background color on hover */
+    color: white;
+    /* Changes text color on hover */
+    text-decoration: none;
+    /* Ensures underline doesn't reappear on hover */
+}
+
+#joke-container,
+#ad-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 600px;
+    /* Maximum width */
+    text-align: center;
+    /* Center align the text inside containers */
+}
+
+#joke-container h2,
+#ad-container h2 {
+    color: #444;
+}
+
+#ad-container {
+    background-color: #eee;
+}
+
+button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+footer {
+    position: relative;
+    /* Keeps the footer in the normal document flow */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* Center-aligns the content inside the footer */
+    display: flex;
+    /* Using flexbox for alignment */
+    justify-content: center;
+    /* Horizontally centers the content */
+    align-items: center;
+    /* Vertically centers the content */
+    padding: 10px 0;
+    /* Optional: Adjust padding as needed */
+
+    /* Existing styles ... */
+
+    @media (max-width: 600px) {
+        body {
+            align-items: flex-start;
+            /* Aligns content to the start on smaller screens */
+        }
+
+        #joke-container,
+        #ad-container {
+            width: 95%;
+            /* Full width on small screens for better readability */
+            margin: 10px;
+            padding: 15px;
+        }
+
+        button {
+            padding: 12px 24px;
+            /* Larger button for easier interaction */
+            font-size: 14px;
+            /* Adjust font size for readability */
+        }
+
+        /* Adjust font sizes for headers and other text elements as needed */
+        h1,
+        h2,
+        p {
+            font-size: smaller;
+            /* Example to adjust text sizes */
+        }
+    }
+
+    /* Existing styles ... */
+
+    #joke-container {
+        margin: 30px;
+        padding: 30px;
+        background-color: #fff;
+        /* Or any color that makes it stand out */
+        border: 3px solid #008cba;
+        /* Example: solid border for emphasis */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 650px;
+        /* Slightly larger than before */
+        text-align: center;
+    }
+
+    #joke {
+        font-size: 20px;
+        /* Larger font size for the joke text */
+        font-weight: bold;
+        /* Making the joke text bold */
+        color: #333;
+        /* Color for better visibility */
+        margin: 10px 0;
+        /* Spacing for better layout */
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 600px) {
+        #joke-container {
+            width: 95%;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        #joke {
+            font-size: 18px;
+            /* Slightly smaller on mobile but still emphasized */
+        }
+    }
+
+
+}
